@@ -22,3 +22,15 @@
 @media(max-width:453px) {
 
 }
+
+
+@media screen and (min-width: 62em){
+.investorLogoBar .investorLogoBarInner>.investorBox:nth-child(odd) {
+    -webkit-animation-delay: .5s;
+    animation-delay: .5s;
+    margin-top: 2.5rem;
+}
+
+
+
+}

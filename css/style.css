@@ -2,32 +2,39 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+   
 }
 
 body {
     padding: 0;
     margin: 0;
-   font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
-    background-color:#f9fbfa;
+    background-color: #f9fbfa;
 }
+
+html{
+     scroll-behaviour : smooth;
+} 
 
 a,
 a:focus,
-a:hover,a:visited {
+a:hover,
+a:visited {
     text-decoration: none;
 }
 
 button:hover,
 button:focus,
 
-button:visited{
-    text-decoration:none !important;
+button:visited {
+    text-decoration: none !important;
 }
 
 
 
-ul , ul li{
+ul,
+ul li {
     padding: 0;
     margin: 0;
     list-style: none;
@@ -46,13 +53,13 @@ p {
 
 
 
-.banner{
-    height:100vh;
-    background-image:url('../images/banner.jpg');
-    background-size:cover;
-    background-repeat:no-repeat;
-  background-attachment: fixed;
-    position:relative;
+.banner {
+    height: 100vh;
+    background-image: url('../images/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
 }
 
 .banner .overlay {
@@ -62,17 +69,18 @@ p {
     z-index: 9;
     left: 0;
     top: 0;
-   background-image: linear-gradient(-60deg,#ff58589c,#f098198c);
+    background-image: linear-gradient(-60deg, #ff58589c, #f098198c);
 }
 
 .banner .conttent {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50% , -50%);
+    transform: translate(-50%, -50%);
     text-align: center;
     z-index: 99;
 }
+
 .banner .conttent h1 {
     font-weight: 600;
     line-height: 4rem;
@@ -81,8 +89,9 @@ p {
     color: #fff;
     font-size: 55px;
 }
+
 .banner .conttent p {
-    color:#fff;
+    color: #fff;
     font-size: 1.2rem;
 }
 
@@ -94,10 +103,10 @@ p {
 }
 
 .banner .conttent a {
-    background-image: linear-gradient(-60deg,#ff5858fc,#f09819);
+    background-color: #fff;
     border: none;
     border-radius: 30px;
-    color: #fff;
+    color: #f68033;
     cursor: pointer;
     display: inline-block;
     font-size: 1rem;
@@ -119,7 +128,7 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 30px;
-    padding: 0px 50px;
+    padding: 0px 0px;
 }
 
 .stellarnav>ul>li>a {
@@ -128,6 +137,11 @@ header {
     text-transform: uppercase;
     font-weight: 500;
     color: whitesmoke;
+    position: relative;
+}
+
+.stellarnav>ul>li>a:hover{
+  color: #f09819;
 }
 
 .banner span {
@@ -154,7 +168,9 @@ header {
     border-top-right-radius: 30px;
     height: 85px;
 }
-
+.banner span a {
+    color: #fff;
+}
 .banner span i {
     height: 51px;
     width: 51px;
@@ -162,14 +178,14 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(-60deg,#ff5858fc,#f09819);
-    cursor:pointer;
+    background-image: linear-gradient(-60deg, #ff5858fc, #f09819);
+    cursor: pointer;
 }
 
 .logo {
     position: absolute;
     z-index: 999;
-    top: 39px;
+    top: 34px;
     left: 39px;
 }
 
@@ -177,24 +193,64 @@ header {
     width: 180px;
 }
 
-.sec-content h4  , .cohorts h4 , .wholearn h4 , .faq h4{
+.sec-content h4,
+.cohorts h4,
+.wholearn h4,
+.faq h4 ,
+.session h4 , .gallerysec h4{
     color: #1a1a1a;
     font-size: 32px;
     font-weight: 600;
     margin-bottom: 12px;
-    text-transform:capitalize;
+    text-transform: capitalize;
 }
-.sec-content p, .sec-content ul li {
+.session h4{
+    text-align:center;
+    color:#fff;
+    position:relative;
+    z-index:99;
+    margin-bottom:30px;
+}
+.sec-content p,
+.sec-content ul li , .gallerysec p {
     color: #616161;
     font-size: 17px;
     line-height: 28px;
     font-weight: 500;
 }
 
+.gallerysec p{
+    text-align: center;
+}
+
 .sec-content ul {
     margin: 12px 0px;
 }
 
+.gallerysec  .owl-stage-outer {
+    margin: 30px 0px;
+}
+
+.gallerysec .owl-nav {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.owl-nav button:focus{outline:0;}
+.gallerysec .owl-nav button span {
+    height: 50px;
+    width: 50px;
+    background-color: #ffffffd9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    border-radius: 50%;
+}
 .sec-content ul li {
     padding-left: 25px;
     position: relative;
@@ -206,10 +262,11 @@ header {
     position: absolute;
     left: 0;
     top: 50%;
-    transform: translate(0 , -50%);
+    transform: translate(0, -50%);
     color: #f18926;
     font-family: "fontawesome";
 }
+
 .sec-img img {
     border-radius: 10px;
 }
@@ -218,98 +275,37 @@ section.about-Programme p {
     margin-bottom: 20px;
 }
 
-.whois h4 {
-       font-size: 14px;
-    color: #f18926;
-    font-weight: 600;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-bottom: 16px;
-    text-align:center;
-}
-
-.whois h6 {
-    text-align: center;
-    font-size: 25px;
-    font-weight: 600;
-    color: #1a1a1a;
-    width:767px;
-    max-width:100%;
-    margin:0 auto;
-}
-
-.whois p {
-    text-align: center;
-    color: #616161;
-    font-size: 17px;
-    line-height: 28px;
-    font-weight: 500;
-    margin: 12px auto;
-    width: 767px;
-    max-width: 100%;
-}
-
-ul.isit-card {
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #fff;
-    border-radius: 50px;
-    justify-content: space-between;
-        box-shadow: 0px 0px 6px 2px #0000000d;
-}
-
-ul.isit-card  p{
-    width:unset;
-
-    text-align: center;
-    color: #616161;
-      font-size: 15px;
-    line-height: 23px;
-    font-weight: 500;
-    max-width: 100%;
-}
-
-ul.isit-card  .img {
-    font-size: 30px;
-    color: #fff;
-    height: 55px;
-    width: 55px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    background-image: linear-gradient(-60deg,#ff5858fc,#f09819);
-}
-
-
-ul.isit-card li:last-child{
-    width: 70%;
-}
-
-.whois .row .col-lg-4:nth-of-type(2) .isit-card {
-    margin-bottom: 50px;
-}
 
 .cohorts-card {
     background: #fff;
-    padding: 20px;
+    padding: 15px;
     border-radius: 13px;
     text-align: center;
     box-shadow: 0px 0px 3px 0px #00000052;
+    transition: all 0.2s ease-in-out;
 }
 
-.cohorts-card img{
-    height:200px;
-    width:200px;
-    object-fit:cover;
-    border-radius:10px;
+.cohorts-card:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
 }
 
-.cohorts h4 , .wholearn h4 , .faq h4{
+.cohorts-card img {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 13px;
+}
+
+.cohorts h4,
+.wholearn h4,
+.faq h4,
+.gallerysec h4 {
     text-align: center;
-    margin-bottom:30px;
+    margin-bottom: 30px;
 }
+
+
 
 .cohorts-card date {
     display: block;
@@ -317,9 +313,10 @@ ul.isit-card li:last-child{
     font-weight: 500;
     font-size: 14px;
 }
-.cohorts-card .info{
-    position:relative;
-    padding-bottom:30px;
+
+.cohorts-card .info {
+    position: relative;
+    padding-bottom: 30px;
 }
 
 .cohorts-card a {
@@ -329,18 +326,19 @@ ul.isit-card li:last-child{
     color: #fff;
     font-weight: 600;
     position: absolute;
-    bottom: -20px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+    bottom: 0px;
+
+    border-radius: 5px;
     left: 50%;
     transform: translate(-50%, 0px);
 }
 
-.cohorts  .owl-stage-outer {
+.cohorts .owl-stage-outer {
     padding: 5px;
+    padding-top: 15px;
 }
 
-.cohorts  .owl-nav {
+.cohorts .owl-nav {
     display: flex;
     position: absolute;
     top: 50%;
@@ -349,12 +347,12 @@ ul.isit-card li:last-child{
     width: 100%;
 }
 
-.cohorts  .owl-nav button:focus{
-    outline:0;
+.cohorts .owl-nav button:focus {
+    outline: 0;
 }
 
-.cohorts-card .image{
-    position:relative;
+.cohorts-card .image {
+    position: relative;
 }
 
 img.tagicon {
@@ -369,14 +367,14 @@ img.tagicon {
 
 .sessiontimeline {
     position: relative;
-    display:flex;
+    display: flex;
     justify-content: space-around;
 
 }
 
 .sessiontimeline ol {
     list-style-position: inside;
-    margin:0px;
+    margin: 0px;
 }
 
 .sessiontimeline ol li {
@@ -391,7 +389,7 @@ img.tagicon {
     color: #fff;
     font-weight: bold;
     border-radius: 10px;
-    max-width:100%;
+    max-width: 100%;
 }
 
 .sessiontimeline ol li:nth-child(even) {
@@ -406,18 +404,18 @@ img.tagicon {
     border-right: 1px dashed #f38828;
     top: 0;
     left: 49%;
-   
+
 }
 
-section.session.py-5.bg-white h4{
+section.session.py-5.bg-white h4 {
     color: #fff;
     font-size: 32px;
     font-weight: 600;
     margin-bottom: 50px;
     text-transform: capitalize;
     text-align: center;
-    z-index:99;
-    position:relative;
+    z-index: 99;
+    position: relative;
 }
 
 .sessiontimeline ol li:nth-child(odd):before {
@@ -434,7 +432,7 @@ section.session.py-5.bg-white h4{
 }
 
 
-   .sessiontimeline ol li:nth-child(odd):after {
+.sessiontimeline ol li:nth-child(odd):after {
     content: "";
     width: 100px;
     height: 1px;
@@ -465,12 +463,12 @@ section.session.py-5.bg-white h4{
     left: -41%;
 }
 
-.session{
+.session {
     background-image: url('../images/timelinesec.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    position:relative;
+    position: relative;
 }
 
 .session .overlay {
@@ -481,20 +479,22 @@ section.session.py-5.bg-white h4{
     width: 100%;
     background-color: #000000b5;
 }
+
 .willearn-card {
-    text-align:center;
+    text-align: center;
 }
+
 .willearn-card img {
     width: 100%;
     height: 250px;
     object-fit: cover;
-    border-radius:5px;
-    
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
 }
 
 .willearn-card {
     text-align: center;
-    min-height: 357px;
+    min-height: 366px;
     color: #020202;
     background-color: #fff;
     box-shadow: 0px 0px 5px 0px #0000005c;
@@ -509,10 +509,10 @@ section.session.py-5.bg-white h4{
     font-family: 'Zen Antique Soft', serif;
 }
 
-.willearn-card p{
-    font-size:14px;
-    font-weight:500;
-    padding:0px 10px 8px 0px;
+.willearn-card p {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0px 10px 8px 0px;
 }
 
 .stepstoapply ul {
@@ -520,12 +520,13 @@ section.session.py-5.bg-white h4{
     display: flex;
     justify-content: space-around;
     border-top: 1px dashed #f6a95d;
-   
+
 }
+
 .stepstoapply ul li {
     text-align: center;
     position: relative;
-    padding-top:20px;
+    padding-top: 20px;
 }
 
 .stepstoapply ul li h6 {
@@ -545,10 +546,10 @@ section.session.py-5.bg-white h4{
     margin: 0 auto;
     box-shadow: 0px 0px 4px 0px #0000003b;
     margin-top: -64px;
-} 
+}
 
-.stepstoapply ul li img{
-    width:50px;
+.stepstoapply ul li img {
+    width: 50px;
 }
 
 .stepstoapply ul li h6 {
@@ -562,12 +563,12 @@ section.session.py-5.bg-white h4{
 
 .finalcta--container {
     padding: 50px 5vw 100px;
-   position: relative;
+    position: relative;
 }
 
 .finalcta--wrapper {
     align-items: center;
-    background-image: linear-gradient(-60deg,#ff5858,#f09819);
+    background-image: linear-gradient(-60deg, #ff5858, #f09819);
     border-radius: 12px;
     display: flex;
     flex-direction: column;
@@ -617,14 +618,14 @@ a.apply_now_white_button {
 }
 
 .heroFeaturedWrapper .brandGrid {
-        grid-column-gap: 36px;
+    grid-column-gap: 36px;
     align-items: center;
     display: grid;
-    grid-template-columns: repeat(6,-webkit-max-content);
-    grid-template-columns: repeat(6,max-content);
+    grid-template-columns: repeat(6, -webkit-max-content);
+    grid-template-columns: repeat(6, max-content);
     justify-content: center;
 
-        
+
 }
 
 .heroFeaturedWrapper .brandBlock {
@@ -638,16 +639,267 @@ a.apply_now_white_button {
 
 .card {
     border: 1px solid rgb(243 136 40) !important;
-    margin-bottom:10px;
-   
+    margin-bottom: 10px;
+
 }
 
 .card-header {
     background-color: transparent;
-    border-bottom: 1px solid rgba(0,0,0,.125) !important;
+    border-bottom: 1px solid rgba(0, 0, 0, .125) !important;
 }
 
 .faq .btn-link {
     color: #f38828;
 
+}
+
+.card-body ul li {
+    color: #616161;
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 500;
+    width: 700px;
+    max-width: 100%;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.card-body ul li:last-child {
+    margin-bottom: 0px;
+}
+
+
+.card-body ul li:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #f38828;
+    opacity: 0.5;
+}
+
+.cohorts-card .info b {
+    margin-bottom: 15px;
+
+    display: block;
+}
+
+.wholearn h4 {
+    font-size: 25px;
+}
+
+/*bakedby*/
+.investorBox {
+    margin-right: 10px;
+}
+
+.investorLogoBar>p {
+    color: #f18926;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.investorLogoBar .investorLogoBarInner {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.investorLogoBar .investorLogoBarInner .investorBox {
+    align-items: center;
+    -webkit-animation: float 7s ease-in-out infinite;
+    animation: float 7s ease-in-out infinite;
+    background: #fff;
+    border-radius: 5rem;
+    box-shadow: 0 .19rem .38rem 0 rgba(41,70,97,.3);
+    display: flex;
+    padding: 1rem;
+    text-align: center;
+    width: auto;
+}
+
+.investorLogoBar .investorLogoBarInner .investorBox .investorLogo.yc {
+    background-color: #fb651e;
+}
+
+.investorLogoBar .investorLogoBarInner .investorBox .investorLogo {
+    border-radius: 50%;
+    height: 65px;
+    margin: 0 12px 0 0;
+    overflow: hidden;
+    width: 65px;
+}
+
+.investorLogoBar .investorLogoBarInner .investorBox .investorLogo img {
+    border-radius: 50%;
+    height: 100%;
+    object-fit: contain;
+    width: 100%;
+}
+
+.investorLogoBar .investorLogoBarInner .investorBox .investorTitle {
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: left;
+}
+
+.investorLogoBar .investorLogoBarInner .investorBox .investorLogo.pf {
+    background-color: #000e35;
+    padding: 10px;
+}
+
+.investorLogoBar .investorLogoBarInner .investorBox .investorLogo.pf img {
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+
+@keyframes float {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
+.secheadbox {
+    text-align: center;
+}
+
+.secheadbox p {
+    width: 700px;
+    margin: 10px auto 25px auto;
+    max-width: 100%;
+    font-size: 18px;
+}
+
+.section-info {
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: justify;
+    margin: 10px;
+    height: 100%;
+    box-shadow: 5px 5px 10px 4px #0000000f;
+}
+
+.secbottom {
+    padding: 30px;
+    margin: 50px 0px 0px 0px;
+    background-color: #ffff;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #f5832e;
+    box-shadow: 5px 5px 10px 4px #0000000f;
+}
+
+.section-info p {
+    color: #0000007a;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.whiusitfor{
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center bottom;
+    height:300px;
+    position:relative;
+}
+
+
+.innercontent {
+    background-color: #00000078;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display:flex;
+    justify-content:center;
+    padding-left:110px;
+    flex-direction: column;
+}
+
+.innercontent h4{
+    color:#fff;
+    font-weight:500;
+    font-weight:40px;
+    margin-bottom:15px;
+}
+
+.innercontent p {
+    font-weight: 500;
+    color: #fff;
+    width: 643px;
+    max-width: 100%;
+}
+
+.innercontent p:last-child{
+    margin-top:10px;
+}
+
+.s-card {
+    font-weight: 500;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100px;
+    margin-bottom: 30px;
+    color: whitesmoke;
+    background-image: linear-gradient(-60deg, #ff5858fc, #f09819);
+    border-radius: 5px;
+}
+
+.s-card i {
+    margin-right: 10px;
+}
+
+
+section.sessionrprogramm {
+    text-align: center;
+ 
+}
+
+
+section.sessionrprogramm a {
+    padding: 8px 25px;
+    text-transform: capitalize;
+    font-weight: 500;
+    background-color: #fff;
+    color: #fd6450;
+    border-radius: 30px;
+    display: inline-block;
+    box-shadow: 0px 0px 2px 2px #0000000a;
+    margin-top: 30px;
+}
+section.sessionrprogramm h4 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+section:nth-child(odd){
+    background-color:#fff;
+}
+
+.gallery {
+    height: 420px;
+    border-radius: 15px;
+}
+
+.gallery  img{
+    height:100%;
+    object-fit:cover;
+    border-radius:15px;
 }
