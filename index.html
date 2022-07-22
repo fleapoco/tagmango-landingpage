@@ -397,6 +397,97 @@
             </div>
         </div>
     </section>
+
+
+    <section class="testimonial py-5">
+    	
+    	<div class="container">
+
+    		<h4>What are previous cohort members have to say</h4>
+
+  <div class="owl-carousel owl-theme test-card">
+                <div class="item">
+                    
+                      <div class="willearn-card testimonial-card">
+                        <div class="images">
+                        	 <span  onclick="lightbox_open();"><img src="images/playbtn.png"></span>
+                            <img src="images/Adit.jpeg" alt="profile">
+                        </div>
+                        <h5>Dhairya Saluja</h5>
+                        <p>Portfolio Management, Welfare Investments</p>
+                       
+                    </div>
+
+                </div>
+
+
+                  <div class="item">
+                    
+                      <div class="willearn-card testimonial-card">
+                        <div class="images">
+                        	 <span  onclick="lightbox_open();"><img src="images/playbtn.png"></span>
+                           <img src="images/Adit.jpeg" alt="profile">
+                        </div>
+                        <h5>Aashi Khaitan</h5>
+                        <p> Founder, Pink Whale</p>
+                        
+                    </div>
+
+                </div>
+
+                  <div class="item">
+                    
+                      <div class="willearn-card testimonial-card">
+                        <div class="images">
+                        	 <span  onclick="lightbox_open();"><img src="images/playbtn.png"></span>
+                            <img src="images/Adit.jpeg" alt="profile">
+                        </div>
+                        <h5>Gautam Parekh</h5>
+                        <p>Founder, Minerva</p>
+                        
+                    </div>
+
+                </div>
+
+                  <div class="item">
+                    
+                      <div class="willearn-card testimonial-card">
+                        <div class="images">
+                        	 <span  onclick="lightbox_open();"><img src="images/playbtn.png"></span>
+                           <img src="images/Adit.jpeg" alt="profile">
+                        </div>
+                        <h5>Shubh Sachdeva</h5>
+                        <p>Developer at Gojek</p>
+                        
+                    </div>
+
+                </div>
+
+                  <div class="item">
+                    
+                      <div class="willearn-card testimonial-card">
+                        <div class="images">
+                        	 <span  onclick="lightbox_open();"><img src="images/playbtn.png"></span>
+                            <img src="images/Adit.jpeg" alt="profile">
+                        </div>
+                        <h5>Atharva Sabnis</h5>
+                        <p>Founder, NFT Club</p>
+
+                      
+                    </div>
+
+                </div>
+
+                 
+
+
+
+    		
+    	</div>
+
+    </div>
+
+    </section>
     <section class="sessionrprogramm py-5">
         <div class="container">
             <h4>What are previous cohort members have to say</h4>
@@ -538,7 +629,7 @@
                 </li>
                 <li>
                     <div class="stepscard">
-                        <div class="img"><img src="images/sign-up.png" alt="icon"></div>
+                        <div class="img"><img src="images/check (3).png" alt="icon"></div>
                         <h6>Final Selection
                         </h6>
                     </div>
@@ -629,6 +720,16 @@
             </div>
         </div>
     </section>
+
+    <div id="light">
+  <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+  <video id="VisaChipCardVideo" controls>
+    <source src="images/20220722-152627-713.mp4" type="video/mp4">
+   
+  </video>
+</div>
+
+<div id="fade" onClick="lightbox_close();"></div>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
@@ -677,6 +778,30 @@
         }
     })
     </script>
+
+
+        <script type="text/javascript">
+    $('.test-card').owlCarousel({
+        autoplay: true,
+        smartSpeed: 4000,
+        dots: false,
+        nav: false,
+        margin: 50,
+        loop: true,
+        margin: 10,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 4
+            }
+        }
+    })
+    </script>
     <script>
     jQuery('.stellarnav').stellarNav({
         theme: 'plain',
@@ -698,6 +823,33 @@ $('a').on('click',function(e){
         scrollTop:$($(this).attr('href')).offset().top + 'px'
     },1000,'swing');
 });
+    </script>
+
+
+    <script type="text/javascript">
+    	window.document.onkeydown = function (e) {
+  if (!e) {
+    e = event;
+  }
+  if (e.keyCode == 27) {
+    lightbox_close();
+  }
+};
+
+function lightbox_open() {
+  var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+  window.scrollTo(0, 0);
+  document.getElementById("light").style.display = "flex";
+  document.getElementById("fade").style.display = "flex";
+  lightBoxVideo.play();
+}
+
+function lightbox_close() {
+  var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+  document.getElementById("light").style.display = "none";
+  document.getElementById("fade").style.display = "none";
+  lightBoxVideo.pause();
+}
     </script>
 </body>
 
