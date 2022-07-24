@@ -851,6 +851,7 @@ function lightbox_open() {
   document.getElementById("light").style.display = "flex";
   document.getElementById("fade").style.display = "flex";
   lightBoxVideo.play();
+  $('body').css('overflow', 'hidden');
 }
 
 function lightbox_close() {
@@ -858,6 +859,7 @@ function lightbox_close() {
   document.getElementById("light").style.display = "none";
   document.getElementById("fade").style.display = "none";
   lightBoxVideo.pause();
+    $('body').css('overflow', 'unset');
 }
     </script>
 </body>
