@@ -197,8 +197,8 @@ header {
 .cohorts h4,
 .wholearn h4,
 .faq h4 ,
-.session h4 , .gallerysec h4 , .testimonial h4{
-    color: #1a1a1a;
+.session h4 , .gallerysec h4 , .testimonial h4 ,  .sessionrprogramm h4 ,.secheadbox h4{
+    color: #1a1a1ad4;
     font-size: 32px;
     font-weight: 600;
     margin-bottom: 12px;
@@ -238,19 +238,12 @@ header {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    padding: 0px 15px;
+    opacity: 0.9;
 }
 
 .owl-nav button:focus{outline:0;}
-.gallerysec .owl-nav button span {
-    height: 50px;
-    width: 50px;
-    background-color: #ffffffd9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 40px;
-    border-radius: 50%;
-}
+
 .sec-content ul li {
     padding-left: 25px;
     position: relative;
@@ -297,12 +290,11 @@ section.about-Programme p {
     border-radius: 13px;
 }
 
-.cohorts h4,
-.wholearn h4,
-.faq h4,
-.gallerysec h4 , .testimonial h4 {
+.cohorts h4, .wholearn h4, .faq h4, .gallerysec h4, .testimonial h4 , .sessionrprogramm h4 , .secheadbox h4 {
     text-align: center;
     margin-bottom: 30px;
+    width: 600px;
+    margin: 0 auto 30px auto;
 }
 
 
@@ -557,7 +549,7 @@ section.session.py-5.bg-white h4 {
     font-weight: 600;
     color: #000000c7;
     width: 200px;
-    margin: 12 auto 0px auto;
+    margin: 12px auto 0px auto;
     text-align: center;
 }
 
@@ -662,18 +654,17 @@ a.apply_now_white_button {
     max-width: 100%;
     margin-bottom: 10px;
     position: relative;
-    padding-left: 15px;
+    padding-left: 47px;
 }
 
 .card-body ul li:last-child {
     margin-bottom: 0px;
 }
 
-
 .card-body ul li:before {
     content: "";
     position: absolute;
-    left: 0;
+    left: 30px;
     top: 50%;
     transform: translate(-50%, -50%);
     height: 10px;
@@ -790,7 +781,7 @@ a.apply_now_white_button {
     text-align: justify;
     margin: 10px;
     height: 100%;
-    box-shadow: 5px 5px 10px 4px #0000000f;
+
 }
 
 .secbottom {
@@ -802,7 +793,7 @@ a.apply_now_white_button {
     font-size: 16px;
     font-weight: bold;
     color: #f5832e;
-    box-shadow: 5px 5px 10px 4px #0000000f;
+   
 }
 
 .section-info p {
@@ -811,31 +802,45 @@ a.apply_now_white_button {
     font-weight: 600;
 }
 
-.whiusitfor{
-    background-size:cover;
-    background-repeat:no-repeat;
-    background-position:center bottom;
-    height:300px;
-    position:relative;
+.whiusitfor {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    height: 400px;
+    position: relative;
+}
+
+
+.whiusitfor::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: linear-gradient(28deg, #ff5858c7, #f09819d6);
+    clip-path: polygon(100% 0, 0 0, 0 100%);
 }
 
 
 .innercontent {
-    background-color: #00000078;
     height: 100%;
     width: 100%;
     position: absolute;
-    display:flex;
-    justify-content:center;
-    padding-left:110px;
+    display: flex;
+    justify-content: start;
+    padding-left: 51px;
     flex-direction: column;
+    width: 500px;
+    max-width: 100%;
+    top: 51px;
 }
 
-.innercontent h4{
-    color:#fff;
-    font-weight:500;
-    font-weight:40px;
-    margin-bottom:15px;
+.innercontent h4 {
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-size: 25px;
 }
 
 .innercontent p {
@@ -843,6 +848,7 @@ a.apply_now_white_button {
     color: #fff;
     width: 643px;
     max-width: 100%;
+    font-size: 18px;
 }
 
 .innercontent p:last-child{
@@ -850,22 +856,25 @@ a.apply_now_white_button {
 }
 
 .s-card {
-    font-weight: 500;
+    font-weight: 600;
     padding: 10px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    min-height: 100px;
+    min-height: 67px;
     margin-bottom: 30px;
-    color: whitesmoke;
-    background-image: linear-gradient(-60deg, #ff5858fc, #f09819);
+    color: #02020278;
+    /* background-image: linear-gradient(-60deg, #ff5858fc, #f09819); */
     border-radius: 5px;
+    background-color: #80808000;
+    box-shadow: 0px 0px 5px 0px #00000021;
 }
 
 .s-card i {
-    margin-right: 10px;
+    color: #f38828;
+    font-size:20px;
+    margin-right:10px;
 }
-
 
 section.sessionrprogramm {
     text-align: center;
@@ -877,8 +886,8 @@ section.sessionrprogramm a {
     padding: 8px 25px;
     text-transform: capitalize;
     font-weight: 500;
-    background-color: #fff;
-    color: #fd6450;
+    background-color: #f38828;
+    color: #fff;
     border-radius: 30px;
     display: inline-block;
     box-shadow: 0px 0px 2px 2px #0000000a;
@@ -1021,4 +1030,12 @@ section:nth-child(odd){
 video#VisaChipCardVideo {
     height: 100%;
     width: 100%;
+}
+
+.owl-carousel .item{
+    padding:10px;
+}
+
+.accordion .card-body p {
+    padding-left: 24px;
 }
