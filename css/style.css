@@ -313,13 +313,12 @@ section.about-Programme p {
 
 .cohorts-card a {
     display: inline-block;
-    padding: 7px 15px;
+    padding: 7px 12px;
     background-color: #f38828;
     color: #fff;
     font-weight: 600;
     position: absolute;
     bottom: 0px;
-
     border-radius: 5px;
     left: 50%;
     transform: translate(-50%, 0px);
