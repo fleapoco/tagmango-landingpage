@@ -1038,3 +1038,42 @@ video#VisaChipCardVideo {
 .accordion .card-body p {
     padding-left: 24px;
 }
+
+.fees p {
+    color: #616161;
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 500;
+    width: 700px;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.fees ul li {
+    font-size: 16px;
+    margin: 10px 0px;
+    font-weight: 500;
+    padding-left: 20px;
+    position: relative;
+}
+
+.fees ul li:before {
+    content: "";
+    position: absolute;
+    left: 17px;
+    top: 50%;
+    transform: translate(0,-50%);
+    height: 1px;
+    width: 14px;
+    border-radius: 0;
+    background-color: #000000b8;
+}
+
+.fees ul li {
+    font-size: 15px;
+    margin: 10px 0px;
+    font-weight: 500;
+    padding-left: 44px;
+    position: relative;
+    color: #616161;
+}
