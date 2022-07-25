@@ -197,7 +197,7 @@ header {
 .cohorts h4,
 .wholearn h4,
 .faq h4 ,
-.session h4 , .gallerysec h4 , .testimonial h4 ,  .sessionrprogramm h4 ,.secheadbox h4{
+.session h4 , .gallerysec h4 , .testimonial h4 ,  .sessionrprogramm h4 ,.secheadbox h4 , .eachcohorts  h1{
     color: #1a1a1ad4;
     font-size: 32px;
     font-weight: 600;
@@ -290,7 +290,7 @@ section.about-Programme p {
     border-radius: 13px;
 }
 
-.cohorts h4, .wholearn h4, .faq h4, .gallerysec h4, .testimonial h4 , .sessionrprogramm h4 , .secheadbox h4 {
+.cohorts h4, .wholearn h4, .faq h4, .gallerysec h4, .testimonial h4 , .sessionrprogramm h4 , .secheadbox h4 , .eachcohorts  h1{
     text-align: center;
     margin-bottom: 30px;
     width: 600px;
@@ -805,8 +805,9 @@ a.apply_now_white_button {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center bottom;
-    height: 400px;
+    height: 100vh;
     position: relative;
+    background-attachment:fixed;
 }
 
 
@@ -817,29 +818,27 @@ a.apply_now_white_button {
     position: absolute;
     left: 0;
     top: 0;
-    background-image: linear-gradient(28deg, #ff5858c7, #f09819d6);
-    clip-path: polygon(100% 0, 0 0, 0 100%);
+
+    background: #0000006e;
 }
 
 
 .innercontent {
-    height: 100%;
-    width: 100%;
     position: absolute;
-    display: flex;
-    justify-content: start;
-    padding-left: 51px;
-    flex-direction: column;
-    width: 500px;
-    max-width: 100%;
-    top: 51px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .innercontent h4 {
-    color: #fff;
+ 
     font-weight: 600;
-    margin-bottom: 15px;
-    font-size: 25px;
+    line-height: 4rem;
+    margin-bottom: 6px;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 55px;
 }
 
 .innercontent p {
@@ -847,9 +846,8 @@ a.apply_now_white_button {
     color: #fff;
     width: 643px;
     max-width: 100%;
-    font-size: 18px;
+    font-size: 1.2rem;
 }
-
 .innercontent p:last-child{
     margin-top:10px;
 }
@@ -860,15 +858,13 @@ a.apply_now_white_button {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    min-height: 67px;
+    min-height: 71px;
     margin-bottom: 30px;
     color: #02020278;
-    /* background-image: linear-gradient(-60deg, #ff5858fc, #f09819); */
     border-radius: 5px;
-    background-color: #80808000;
+    background-color: #ffffff;
     box-shadow: 0px 0px 5px 0px #00000021;
 }
-
 .s-card i {
     color: #f38828;
     font-size:20px;
@@ -1046,34 +1042,136 @@ video#VisaChipCardVideo {
     font-weight: 500;
     width: 700px;
     max-width: 100%;
-    margin-bottom: 20px;
+    text-align: center;
+    margin: 30px auto 0px auto;
 }
 
-.fees ul li {
-    font-size: 16px;
-    margin: 10px 0px;
-    font-weight: 500;
-    padding-left: 20px;
-    position: relative;
-}
-
-.fees ul li:before {
-    content: "";
-    position: absolute;
-    left: 17px;
-    top: 50%;
-    transform: translate(0,-50%);
-    height: 1px;
-    width: 14px;
-    border-radius: 0;
-    background-color: #000000b8;
-}
-
-.fees ul li {
+.fees ol li {
     font-size: 15px;
     margin: 10px 0px;
     font-weight: 500;
-    padding-left: 44px;
     position: relative;
     color: #616161;
+    padding-left: 10px;
+}
+
+
+.fees ol  {
+    list-style-position:inside;
+}
+
+
+.innercohoorts ul li{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    align-items: stretch;
+}
+.innercohoorts ul li .timelinecard{
+    position:relative;
+        padding: 28px;
+        width:50%;
+}
+
+
+.innercohoorts ul{
+    position: relative;
+}
+
+.innercohoorts ul::before {
+    content: "";
+    position: absolute;
+    width: 0.5px;
+    height: 100%;
+    position: absolute;
+    border:0.5px dashed #f38828;
+    left: 50%;
+    transform: translate(-50%, 10px);
+}
+
+.timelinecard {
+    font-weight: bold;
+    font-size: 25px;
+    color: #00000080;
+}
+.timelinecard h2{
+
+    color:#f38828;
+}
+.innercohoorts ul li:nth-child(odd) .timelinecard {
+    text-align: right;
+}
+
+.innercohoorts ul li:nth-child(even) .timelinecard::before {
+    content: "";
+    position: absolute;
+     left:0;
+    transform: translate(-50% , -50%);
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #f38828;
+    top: 50%;
+}
+
+
+.innercohoorts ul li:nth-child(odd) .timelinecard::before {
+    content: "";
+    position: absolute;
+    right: -16px;
+    transform: translate(-50% , -50%);
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #f38828;
+    top: 50%;
+}
+
+.innercohoorts ul li:nth-child(even){
+    justify-content:flex-end;
+    align-items:flex-end;
+}
+.f_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    padding: 15px 0px;
+    background-image: linear-gradient(28deg, #ff5858c7, #f09819d6);
+}
+
+.f_inner a {
+    color: #fff;
+    font-size: 14px;
+}
+
+.f_inner a  span{
+    font-weight:600;
+    text-transform: capitalize;
+}
+
+a.signupbtn {
+
+    display: block;
+    width: 151px;
+    text-align: center;
+    margin: 30px  auto 0px auto;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding: 8px 25px;
+    text-transform: capitalize;
+    font-weight: 500;
+    background-color: #f38828;
+    color: #fff;
+    border-radius: 30px;
+    box-shadow: 0px 0px 2px 2px #0000000a;
+    margin-top: 30px;
+}
+
+section.fees{
+    height:100vh;
 }
