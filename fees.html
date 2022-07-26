@@ -21,8 +21,9 @@
 
     <section class="fees py-5" id="next">
         <div class="container">
+             <h4>break down of the cohort fee</h4>
             <div class="row align-items-center">
-                <div class="col-lg-6">
+                <div class="col-lg-4">
              
                     <b>The cost of the cohort (on being selected after a personal interview) is Rs. 25,000.
                         This covers -
@@ -38,7 +39,9 @@
                     </ol>
                     <small><b>Note: We do not cover your travel costs.</b></small>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-8">
+
+
                     <canvas id="myChart" style="width:100%;max-width:750px"></canvas>
                 </div>
             </div>
@@ -103,13 +106,26 @@
             datasets: [{
                 backgroundColor: barColors,
                 data: yValues
-            }]
+            }
+            ]
         },
+
         options: {
             title: {
-                display: true,
+                display: false,
                 text: "Breakdown of the Cohort Fees"
-            }
+            },
+
+          
+
+                legend:{
+                   position: 'right'
+
+                },
+
+          
+
+
         }
     });
     </script>

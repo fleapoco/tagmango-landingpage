@@ -256,6 +256,10 @@ display: none;
     padding: 10px;
 
 }
+
+.cohorts .owl-nav {
+    display: none;
+}
 }
 
 
