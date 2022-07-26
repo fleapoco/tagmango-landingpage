@@ -1142,9 +1142,7 @@ a.signupbtn {
     margin-top: 30px;
 }
 
-section.fees{
-    height:100vh;
-}
+
 
 .cohorts .owl-nav {
     display: flex;
@@ -1170,3 +1168,55 @@ section.fees{
 .cohorts .owl-nav button img {
     width: 40px;
 }
+
+.fees  h4{
+    margin-bottom:20px;
+}
+
+.fees .subtitle{
+    text-align: center;
+    width:400px;
+    margin:0 auto;
+    font-weight:600;
+    font-size:16px;
+    margin-bottom:30px;
+
+    text-align:center;
+}
+
+.listnotation ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width:100%;
+}
+
+
+.listnotation ul li {
+    position: relative;
+    padding: 10px;
+    width: 26.3%;
+    box-shadow: 0px 0px 7px 0px #00000021;
+    height: 73px;
+    margin: 19px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    color: #00000096;
+    padding-left: 40px;
+    border-radius: 8px;
+}
+.listnotation ul li::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translate(0% , -50%);
+    background-image: url('../images/tickicon.png');
+    background-size: contain;
+    height: 23px;
+    width: 24px;
+    background-repeat: no-repeat;
+}
+
