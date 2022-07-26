@@ -1010,7 +1010,7 @@ video#VisaChipCardVideo {
     font-size: 15px;
     line-height: 28px;
     font-weight: 500;
-    width: 700px;
+    width: 924px;
     max-width: 100%;
     text-align: center;
     margin: 30px auto 0px auto;
@@ -1220,3 +1220,6 @@ a.signupbtn {
     background-repeat: no-repeat;
 }
 
+.item:hover{
+    cursor:pointer;
+}
