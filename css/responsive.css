@@ -1,25 +1,271 @@
-@media(max-width:1050px) {
+@media(max-width:1120px) {
 
-      
+      .cohorts-card a {
+    padding: 7px 10px;
+    font-size: 12px;
+}
+
+.stellarnav>ul>li>a {
+    padding: 10px 5px;
+    font-size: 14px;
+
+}
+
+section.fees {
+    height: auto;
+}
+
+}
+
+@media(max-width:1024px) {
+
+
+.banner {
+    height: 50vh;
+
+}
+
+.whiusitfor {
+    background-position: center bottom;
+    height: 50vh;
+
+}
+
+.cohorts-card {
+    padding: 10px;
+  
+}
+
+.cohorts-card b {
+
+    font-size: 12px;
+}
 
 }
 @media(max-width:991px) {
 
 
+.banner {
+    height: 100vh;
 
+}
 
+.whiusitfor {
+	height:100vh;
+}
+
+.banner .conttent h1 {
+
+    line-height: 3rem;
+    margin-bottom: 6px;
+    font-size: 35px;
+}
+
+.banner .conttent p {
+    font-size: 1rem;
+
+}
+
+.banner .conttent .b-title {
+    font-size: 1rem;
+
+}
+
+.banner .conttent a {
+    padding: 10px 27px;
+   
+}
+
+.innercontent h4 {
+    line-height: 4rem;
+    font-size: 35px;
+}
+
+.innercontent p {
+    font-size: 1rem;
+}
+
+.investorBox {
+    margin-bottom: 30px;
+}
+
+.willearn-card img {
+    height: 190px;
+ 
+}
+
+.willearn-card p {
+    font-size: 12px;
+    padding: 0px 10px 10px 10px;
+}
+.willearn-card {
+    min-height: 300px;
+
+}
+.f_inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section-info {
+    padding: 0px;
+    margin: 0px 0px 5px 0px;
+    background-color:transparent;
+    text-align: center;
+
+}
+
+.stellarnav>ul>li>a {
+    padding: 10px 2px;
+    font-size: 14px;
+}
+
+header {
+    right:39px;
+    left:unset;
+    transform: translate(-0% , -50%);
+ 
+}
 }
 @media(max-width:767px) {
 
 
+.cohorts h4, .wholearn h4, .faq h4, .gallerysec h4, .testimonial h4, .sessionrprogramm h4, .secheadbox h4, .eachcohorts  h1 {
+    width: 600px;
+    max-width: 100%;
+    font-size:25px;
 }
 
-@media(max-width:575px) {
+}
+
+@media(max-width:667px) {
+   .card-header button {
+    white-space: inherit;
+}
+
+.f_inner {
+    text-align: center;
+}
+
+.stepstoapply ul {
+ 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border:0px;
+}
+
+.innercontent {
+
+    max-width: 100%;
+    padding: 10px;
+}
+
+.conttent {
+    max-width: 100%;
+    padding: 10px;
+}
+
+.stepstoapply ul li .img {
+  margin-top:0px;
+}
+
+.stepstoapply ul {
+    margin-top: 0px;
 
 }
 
+.banner .conttent h1 {
+    line-height: 1.8rem;
+    font-size: 20px;
+}
 
-@media(max-width:453px) {
+.cohorts h4, .wholearn h4, .faq h4, .gallerysec h4, .testimonial h4, .sessionrprogramm h4, .secheadbox h4, .eachcohorts  h1 {
+    margin: 0 auto 20px auto;
+}
+
+.secheadbox p {
+    margin: 10px auto 20px auto;
+    font-size: 14px;
+}
+
+p{
+	font-size:14px !important;
+}
+
+.secbottom {
+    padding: 12px;
+    margin: 20px 0px 0px 0px;
+
+}
+
+.investorLogoBar .investorLogoBarInner .investorBox {
+
+    width: 100%;
+    margin: 0px 0px 20px 0px;
+}
+span.investorSubtitle {
+    font-size: 14px;
+}
+
+header {
+    right: 0;
+    left: unset;
+    transform: translate(-0% , 0%);
+    position: static;
+    border-radius: 0px;
+    background-image: linear-gradient(28deg, #ff5858c7, #f09819d6);
+}
+
+.stellarnav>ul>li>a {
+    padding: 2px 2px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+header .container {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+header {
+    padding: 10px 5px;
+}
+
+.logo {
+    display: none;
+}
+
+.card-body ul li {
+    font-size: 14px;
+    padding-left: 16px;
+}
+
+.accordion .card-body p {
+    padding-left: 16px;
+    line-height: 24px;
+}
+
+.card-body ul li:before {
+display: none;
+}
+
+.innercohoorts ul li .timelinecard {
+    padding: 10px;
+
+}
+}
+
+
+@media(max-width:450px) {
+.cohorts h4, .wholearn h4, .faq h4, .gallerysec h4, .testimonial h4, .sessionrprogramm h4, .secheadbox h4, .eachcohorts  h1 {
+  
+    font-size: 20px;
+        line-height: 1.8rem;
+}
+
 
 }
 
