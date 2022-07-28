@@ -1,358 +1,339 @@
-@media(max-width:1120px) {
-
-      .cohorts-card a {
+@media (max-width: 1120px) {
+  .cohorts-card a {
     padding: 7px 10px;
     font-size: 12px;
-}
+  }
 
-.stellarnav>ul>li>a {
+  .stellarnav > ul > li > a {
     padding: 10px 5px;
     font-size: 14px;
+  }
 
-}
-
-section.fees {
+  section.fees {
     height: auto;
+  }
 }
 
-}
-
-@media(max-width:1024px) {
-
-
-.banner {
+@media (max-width: 1024px) {
+  .banner {
     height: 50vh;
+  }
 
-}
-
-.whiusitfor {
+  .whiusitfor {
     background-position: center bottom;
     height: 50vh;
+  }
 
-}
-
-.cohorts-card {
+  .cohorts-card {
     padding: 10px;
-  
-}
+  }
 
-.cohorts-card b {
-
+  .cohorts-card b {
     font-size: 12px;
+  }
 }
-
-}
-@media(max-width:991px) {
-
-
-.banner {
+@media (max-width: 991px) {
+  .banner {
     height: 100vh;
+  }
 
-}
+  .whiusitfor {
+    height: 100vh;
+  }
 
-.whiusitfor {
-	height:100vh;
-}
-
-.banner .conttent h1 {
-
+  .banner .conttent h1 {
     line-height: 3rem;
     margin-bottom: 6px;
     font-size: 35px;
-}
+  }
 
-.banner .conttent p {
+  .banner .conttent p {
     font-size: 1rem;
+  }
 
-}
-
-.banner .conttent .b-title {
+  .banner .conttent .b-title {
     font-size: 1rem;
+  }
 
-}
-
-.banner .conttent a {
+  .banner .conttent a {
     padding: 10px 27px;
-   
-}
+  }
 
-.innercontent h4 {
+  .innercontent h4 {
     line-height: 4rem;
     font-size: 35px;
-}
+  }
 
-.innercontent p {
+  .innercontent p {
     font-size: 1rem;
-}
+  }
 
-.investorBox {
+  .investorBox {
     margin-bottom: 30px;
-}
+  }
 
-.willearn-card img {
- height:100%;
- width:100%;
-}
+  .willearn-card img {
+    height: 100%;
+    width: 100%;
+  }
 
-.willearn-card p {
+  .willearn-card p {
     font-size: 12px;
     padding: 0px 10px 10px 10px;
-}
-.willearn-card {
+  }
+  .willearn-card {
     min-height: 300px;
-
-}
-.f_inner {
+  }
+  .f_inner {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
+  }
 
-.section-info {
+  .section-info {
     padding: 0px;
     margin: 0px 0px 5px 0px;
-    background-color:transparent;
+    background-color: transparent;
     text-align: center;
+  }
 
-}
-
-.stellarnav>ul>li>a {
+  .stellarnav > ul > li > a {
     padding: 10px 2px;
     font-size: 14px;
-}
+  }
 
-header {
-    right:39px;
-    left:unset;
-    transform: translate(-0% , -50%);
- 
+  header {
+    right: 39px;
+    left: unset;
+    transform: translate(-0%, -50%);
+  }
 }
-}
-@media(max-width:767px) {
-
-
-.cohorts h4, .wholearn h4, .faq h4, .gallerysec h4, .testimonial h4, .sessionrprogramm h4, .secheadbox h4, .eachcohorts  h1 {
+@media (max-width: 767px) {
+  .cohorts h4,
+  .wholearn h4,
+  .faq h4,
+  .gallerysec h4,
+  .testimonial h4,
+  .sessionrprogramm h4,
+  .secheadbox h4,
+  .eachcohorts h1 {
     width: 600px;
     max-width: 100%;
-    font-size:25px;
-}
+    font-size: 25px;
+  }
 
-.investorLogoBar .investorLogoBarInner .investorBox:first-child, .investorLogoBar .investorLogoBarInner .investorBox:nth-child(3) {
+  .investorLogoBar .investorLogoBarInner .investorBox:first-child,
+  .investorLogoBar .investorLogoBarInner .investorBox:nth-child(3) {
     border-right: 1px solid #e6e6e6;
-}
+  }
 
-.investorLogoBar .investorLogoBarInner .investorBox {
+  .investorLogoBar .investorLogoBarInner .investorBox {
     border-bottom: 1px solid #e6e6e6;
-}
+  }
 
-.investorLogoBar .investorLogoBarInner .investorBox {
+  .investorLogoBar .investorLogoBarInner .investorBox {
     width: 50%;
     -webkit-animation: unset;
     animation: unset;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 1rem .5rem .75rem;
+    padding: 1rem 0.5rem 0.75rem;
     border-radius: 0;
     box-shadow: none;
     justify-content: center;
-}
-.investorLogoBar .investorLogoBarInner {
-
+  }
+  .investorLogoBar .investorLogoBarInner {
     box-shadow: 0px 0px 4px 0px grey;
-   
-}
+  }
 
-.investorLogoBar .investorLogoBarInner .investorBox .investorLogo {
- 
+  .investorLogoBar .investorLogoBarInner .investorBox .investorLogo {
     margin: 0 0 16px 0;
-    overflow:visible;
-}
+    overflow: visible;
+  }
 
-.investorLogoBar>p {
+  .investorLogoBar > p {
     margin-bottom: 30px !important;
-  
-}
+  }
 }
 
-@media(max-width:667px) {
-   .card-header button {
+@media (max-width: 667px) {
+  .card-header button {
     white-space: inherit;
-}
+  }
 
-.f_inner {
+  .f_inner {
     text-align: center;
-}
+  }
 
-.stepstoapply ul {
- 
+  .stepstoapply ul {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    border:0px;
-}
+    border: 0px;
+  }
 
-.innercontent {
-
+  .innercontent {
     max-width: 100%;
     padding: 10px;
-}
+  }
 
-.conttent {
+  .conttent {
     max-width: 100%;
     padding: 10px;
-}
+  }
 
-.stepstoapply ul li .img {
-  margin-top:0px;
-}
-
-.stepstoapply ul {
+  .stepstoapply ul li .img {
     margin-top: 0px;
+  }
 
-}
+  .stepstoapply ul {
+    margin-top: 0px;
+  }
 
-.banner .conttent h1 {
+  .banner .conttent h1 {
     line-height: 1.8rem;
     font-size: 20px;
-}
+  }
 
-.cohorts h4, .wholearn h4, .faq h4, .gallerysec h4, .testimonial h4, .sessionrprogramm h4, .secheadbox h4, .eachcohorts  h1 {
+  .cohorts h4,
+  .wholearn h4,
+  .faq h4,
+  .gallerysec h4,
+  .testimonial h4,
+  .sessionrprogramm h4,
+  .secheadbox h4,
+  .eachcohorts h1 {
     margin: 0 auto 20px auto;
-}
+  }
 
-.secheadbox p {
+  .secheadbox p {
     margin: 10px auto 20px auto;
     font-size: 14px;
-}
+  }
 
-p{
-	font-size:14px !important;
-}
+  p {
+    font-size: 14px !important;
+  }
 
-.secbottom {
+  .secbottom {
     padding: 12px;
     margin: 20px 0px 0px 0px;
+  }
 
-}
+  .investorBox {
+    margin: 0px;
+  }
 
-.investorBox {
-    margin:0px;
-}
-
-.investorBox {
+  .investorBox {
     min-height: 175px;
     text-align: center;
-}
-span.investorSubtitle {
+  }
+  span.investorSubtitle {
     font-size: 14px;
-}
+  }
 
-.investorBox div span {
+  .investorBox div span {
     display: block;
     text-align: center !important;
-}
+  }
 
-header {
+  header {
     right: 0;
     left: unset;
-    transform: translate(-0% , 0%);
+    transform: translate(-0%, 0%);
     position: static;
     border-radius: 0px;
     background-image: linear-gradient(28deg, #ff5858c7, #f09819d6);
-}
+  }
 
-.stellarnav>ul>li>a {
+  .stellarnav > ul > li > a {
     padding: 2px 2px;
     font-size: 12px;
     font-weight: bold;
-}
+  }
 
-header .container {
+  header .container {
     padding-right: 0px !important;
     padding-left: 0px !important;
-}
+  }
 
-header {
+  header {
     padding: 10px 5px;
-}
+  }
 
-.logo {
+  .logo {
     display: none;
-}
+  }
 
-.card-body ul li {
+  .card-body ul li {
     font-size: 14px;
     padding-left: 16px;
-}
+  }
 
-.accordion .card-body p {
+  .accordion .card-body p {
     padding-left: 16px;
     line-height: 24px;
-}
+  }
 
-.card-body ul li:before {
-display: none;
-}
-
-.innercohoorts ul li .timelinecard {
-    padding: 10px;
-
-}
-
-.cohorts .owl-nav {
+  .card-body ul li:before {
     display: none;
-}
-.testimonial-card .images , .willearn-card .images {
+  }
+
+  .innercohoorts ul li .timelinecard {
+    padding: 10px;
+  }
+
+  .cohorts .owl-nav {
+    display: none;
+  }
+  .testimonial-card .images,
+  .willearn-card .images {
     height: 296px;
-}
+  }
 
-.whiusitfor , section.banner {
- 
-    height: 40vh;
-}
+  .whiusitfor,
+  section.banner {
+    height: 50vh;
+  }
 
-.s-card p {
+  .s-card p {
     text-align: left;
-}
+  }
 
-.s-card {
-  
+  .s-card {
     min-height: 54px;
     margin-bottom: 20px;
- 
-}
-.gallery {
+  }
+  .gallery {
     height: 296px;
-    
-}
+  }
 
-.cohorts .owl-stage-outer {
+  .cohorts .owl-stage-outer {
     padding: 0px;
     padding-top: 15px;
-}
+  }
 }
 
-
-@media(max-width:450px) {
-.cohorts h4, .wholearn h4, .faq h4, .gallerysec h4, .testimonial h4, .sessionrprogramm h4, .secheadbox h4, .eachcohorts  h1 {
-  
+@media (max-width: 450px) {
+  .cohorts h4,
+  .wholearn h4,
+  .faq h4,
+  .gallerysec h4,
+  .testimonial h4,
+  .sessionrprogramm h4,
+  .secheadbox h4,
+  .eachcohorts h1 {
     font-size: 20px;
-        line-height: 1.8rem;
+    line-height: 1.8rem;
+  }
 }
 
-
-}
-
-
-@media screen and (min-width: 62em){
-.investorLogoBar .investorLogoBarInner>.investorBox:nth-child(odd) {
-    -webkit-animation-delay: .5s;
-    animation-delay: .5s;
+@media screen and (min-width: 62em) {
+  .investorLogoBar .investorLogoBarInner > .investorBox:nth-child(odd) {
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
     margin-top: 2.5rem;
-}
-
-
-
+  }
 }
