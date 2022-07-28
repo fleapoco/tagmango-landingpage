@@ -55,7 +55,7 @@ p {
 
 .banner {
     height: 100vh;
-    background-image: url('../images/banner.jpg');
+    background-image: url('../images/banner.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -425,7 +425,7 @@ section.session.py-5.bg-white h4 {
 }
 
 .session {
-    background-image: url('../images/timelinesec.jpg');
+    background-image: url('../images/timelinesec.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -963,7 +963,7 @@ section:nth-child(odd){
 }
 
 #boxclose {
-    float: right;
+    float:right;
     cursor: pointer;
     color: #fff;
     border: 1px solid #aeaeae;
@@ -1232,4 +1232,8 @@ a.signupbtn {
 
 .whiyfor .innercontent h4 {
     margin-bottom: 15px;
+}
+
+.f_inner i {
+    margin-right: 5px;
 }
