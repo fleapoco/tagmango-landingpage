@@ -617,7 +617,7 @@ a.apply_now_white_button {
 .card-body ul li {
     color: #616161;
     font-size: 15px;
-    line-height: 28px;
+    line-height: 23px;
     font-weight: 500;
     width: 700px;
     max-width: 100%;
@@ -802,7 +802,6 @@ a.apply_now_white_button {
 }
 
 .innercontent h4 {
- 
     font-weight: 600;
     line-height: 4rem;
     margin-bottom: 6px;
@@ -810,7 +809,6 @@ a.apply_now_white_button {
     color: #fff;
     font-size: 55px;
 }
-
 .innercontent p {
     font-weight: 500;
     color: #fff;
@@ -856,7 +854,10 @@ section.sessionrprogramm a {
     border-radius: 30px;
     display: inline-block;
     box-shadow: 0px 0px 2px 2px #0000000a;
-    margin-top: 30px;
+    margin: 30px auto 0 auto;
+    display: block;
+    width: 151px;
+    text-align: center;
 }
 section.sessionrprogramm h4 {
     text-align: center;
@@ -1144,7 +1145,7 @@ a.signupbtn {
 
 
 
-.cohorts .owl-nav {
+.cohorts .owl-nav  , .testimonial .owl-nav {
     display: flex;
     position: absolute;
     top: 50%;
@@ -1156,7 +1157,7 @@ a.signupbtn {
 }
 
 
-.cohorts .owl-nav button.owl-prev {
+.cohorts .owl-nav button.owl-prev  , .testimonial .owl-nav button.owl-prev{
     position: relative;
     right: 50px;
 }
@@ -1165,7 +1166,12 @@ a.signupbtn {
     position: relative;
     left: 61px;
 }
-.cohorts .owl-nav button img {
+
+.testimonial .owl-nav button.owl-next{
+    position:relative;
+    left: 50px;
+}
+.cohorts .owl-nav button img , .testimonial .owl-nav img{
     width: 40px;
 }
 
@@ -1222,4 +1228,8 @@ a.signupbtn {
 
 .item:hover{
     cursor:pointer;
+}
+
+.whiyfor .innercontent h4 {
+    margin-bottom: 15px;
 }

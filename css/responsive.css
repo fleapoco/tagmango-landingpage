@@ -90,8 +90,8 @@ section.fees {
 }
 
 .willearn-card img {
-    height: 190px;
- 
+ height:100%;
+ width:100%;
 }
 
 .willearn-card p {
@@ -138,6 +138,42 @@ header {
     font-size:25px;
 }
 
+.investorLogoBar .investorLogoBarInner .investorBox:first-child, .investorLogoBar .investorLogoBarInner .investorBox:nth-child(3) {
+    border-right: 1px solid #e6e6e6;
+}
+
+.investorLogoBar .investorLogoBarInner .investorBox {
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.investorLogoBar .investorLogoBarInner .investorBox {
+    width: 50%;
+    -webkit-animation: unset;
+    animation: unset;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem .5rem .75rem;
+    border-radius: 0;
+    box-shadow: none;
+    justify-content: center;
+}
+.investorLogoBar .investorLogoBarInner {
+
+    box-shadow: 0px 0px 4px 0px grey;
+   
+}
+
+.investorLogoBar .investorLogoBarInner .investorBox .investorLogo {
+ 
+    margin: 0 0 16px 0;
+    overflow:visible;
+}
+
+.investorLogoBar>p {
+    margin-bottom: 30px !important;
+  
+}
 }
 
 @media(max-width:667px) {
@@ -201,13 +237,21 @@ p{
 
 }
 
-.investorLogoBar .investorLogoBarInner .investorBox {
+.investorBox {
+    margin:0px;
+}
 
-    width: 100%;
-    margin: 0px 0px 20px 0px;
+.investorBox {
+    min-height: 175px;
+    text-align: center;
 }
 span.investorSubtitle {
     font-size: 14px;
+}
+
+.investorBox div span {
+    display: block;
+    text-align: center !important;
 }
 
 header {
@@ -259,6 +303,34 @@ display: none;
 
 .cohorts .owl-nav {
     display: none;
+}
+.testimonial-card .images , .willearn-card .images {
+    height: 296px;
+}
+
+.whiusitfor , section.banner {
+ 
+    height: 40vh;
+}
+
+.s-card p {
+    text-align: left;
+}
+
+.s-card {
+  
+    min-height: 54px;
+    margin-bottom: 20px;
+ 
+}
+.gallery {
+    height: 296px;
+    
+}
+
+.cohorts .owl-stage-outer {
+    padding: 0px;
+    padding-top: 15px;
 }
 }
 
