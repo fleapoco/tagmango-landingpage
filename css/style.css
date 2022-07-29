@@ -250,7 +250,7 @@ section.about-Programme p {
 }
 
 .cohorts-card img {
-  height: 200px;
+  height:100%;
   width: 100%;
   object-fit: cover;
   border-radius: 13px;
@@ -1223,3 +1223,12 @@ a.signupbtn {
 .f_inner i {
   margin-right: 5px;
 }
+img.tagicon {
+    display: none !important;
+}
+
+.cohorts-card .image {
+    position: relative;
+    height: 306px;
+}
+
