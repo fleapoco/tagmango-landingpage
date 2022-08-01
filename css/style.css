@@ -91,7 +91,7 @@ p {
 
 .banner .conttent .b-title {
   font-size: 1.3rem;
-  width: 429px;
+  width: 526px;
   max-width: 100%;
   margin: 10px auto;
 }
@@ -271,7 +271,7 @@ section.about-Programme p {
   margin: 0 auto 30px auto;
 }
 
-.cohorts-card date {
+.cohorts-card h6 {
   display: block;
   margin: 12px 0px 0px 0px;
   font-weight: 500;
@@ -1231,4 +1231,7 @@ img.tagicon {
     position: relative;
     height: 306px;
 }
-
+.btn.focus, .btn:focus {
+  outline: 0;
+  box-shadow:unset;
+}
