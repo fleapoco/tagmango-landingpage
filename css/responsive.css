@@ -81,9 +81,7 @@
     font-size: 12px;
     padding: 0px 10px 10px 10px;
   }
-  .willearn-card {
-    min-height: 300px;
-  }
+
   .f_inner {
     display: flex;
     justify-content: center;
