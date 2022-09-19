@@ -7,7 +7,7 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
   background-color: #f9fbfa;
 }
@@ -49,7 +49,7 @@ p {
 
 .banner {
   height: 100vh;
-  background-image: url("../images/banner.png");
+  background-image: url('../images/banner.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -130,6 +130,7 @@ header {
   font-weight: 500;
   color: whitesmoke;
   position: relative;
+  text-transform: uppercase;
 }
 
 .stellarnav > ul > li > a:hover {
@@ -151,6 +152,7 @@ header {
   width: 180px;
 }
 
+.tm-town-hall h4,
 .sec-content h4,
 .cohorts h4,
 .wholearn h4,
@@ -217,13 +219,13 @@ header {
 }
 
 .sec-content ul li::before {
-  content: "\f058";
+  content: '\f058';
   position: absolute;
   left: 0;
   top: 50%;
   transform: translate(0, -50%);
   color: #f18926;
-  font-family: "fontawesome";
+  font-family: 'fontawesome';
 }
 
 .sec-img img {
@@ -254,7 +256,7 @@ section.about-Programme p {
   object-fit: cover;
   border-radius: 13px;
 }
-
+.tm-town-hall h4,
 .cohorts h4,
 .wholearn h4,
 .faq h4,
@@ -379,7 +381,7 @@ section.session.py-5.bg-white h4 {
 }
 
 .sessiontimeline ol li:nth-child(odd):before {
-  content: "";
+  content: '';
   position: absolute;
   left: 49%;
   height: 15px;
@@ -392,7 +394,7 @@ section.session.py-5.bg-white h4 {
 }
 
 .sessiontimeline ol li:nth-child(odd):after {
-  content: "";
+  content: '';
   width: 100px;
   height: 1px;
   background-color: #f38828;
@@ -401,7 +403,7 @@ section.session.py-5.bg-white h4 {
 }
 
 .sessiontimeline ol li:nth-child(even):before {
-  content: "";
+  content: '';
   position: absolute;
   left: -41%;
   height: 15px;
@@ -414,7 +416,7 @@ section.session.py-5.bg-white h4 {
 }
 
 .sessiontimeline ol li:nth-child(even):after {
-  content: "";
+  content: '';
   width: 100px;
   height: 1px;
   background-color: #f38828;
@@ -423,7 +425,7 @@ section.session.py-5.bg-white h4 {
 }
 
 .session {
-  background-image: url("../images/timelinesec.png");
+  background-image: url('../images/timelinesec.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -624,7 +626,7 @@ a.apply_now_white_button {
 }
 
 .card-body ul li:before {
-  content: "";
+  content: '';
   position: absolute;
   left: 30px;
   top: 50%;
@@ -778,7 +780,7 @@ a.apply_now_white_button {
 }
 
 .whiusitfor::before {
-  content: "";
+  content: '';
   height: 100%;
   width: 100%;
   position: absolute;
@@ -975,7 +977,7 @@ section:nth-child(odd) {
 }
 
 .boxclose:before {
-  content: "×";
+  content: '×';
 }
 
 #fade:hover ~ #boxclose {
@@ -1042,7 +1044,7 @@ video#VisaChipCardVideo {
 }
 
 .innercohoorts ul::before {
-  content: "";
+  content: '';
   position: absolute;
   width: 0.5px;
   height: 100%;
@@ -1065,7 +1067,7 @@ video#VisaChipCardVideo {
 }
 
 .innercohoorts ul li:nth-child(even) .timelinecard::before {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   transform: translate(-50%, -50%);
@@ -1077,7 +1079,7 @@ video#VisaChipCardVideo {
 }
 
 .innercohoorts ul li:nth-child(odd) .timelinecard::before {
-  content: "";
+  content: '';
   position: absolute;
   right: -16px;
   transform: translate(-50%, -50%);
@@ -1200,12 +1202,12 @@ a.signupbtn {
   border-radius: 8px;
 }
 .listnotation ul li::before {
-  content: "";
+  content: '';
   position: absolute;
   left: 10px;
   top: 50%;
   transform: translate(0%, -50%);
-  background-image: url("../images/tickicon.png");
+  background-image: url('../images/tickicon.png');
   background-size: contain;
   height: 23px;
   width: 24px;
