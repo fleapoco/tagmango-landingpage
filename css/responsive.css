@@ -108,6 +108,7 @@
   }
 }
 @media (max-width: 767px) {
+  .tm-town-hall h4,
   .cohorts h4,
   .wholearn h4,
   .faq h4,
@@ -194,7 +195,7 @@
     line-height: 1.8rem;
     font-size: 20px;
   }
-
+  .tm-town-hall h4,
   .cohorts h4,
   .wholearn h4,
   .faq h4,
@@ -315,6 +316,7 @@
 }
 
 @media (max-width: 450px) {
+  .tm-town-hall h4,
   .cohorts h4,
   .wholearn h4,
   .faq h4,
@@ -325,6 +327,9 @@
   .eachcohorts h1 {
     font-size: 20px;
     line-height: 1.8rem;
+  }
+  .tm-town-hall .col-md-4:not(:last-child) {
+    margin-bottom: 24px;
   }
 }
 
