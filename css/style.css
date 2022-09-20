@@ -152,6 +152,7 @@ header {
   width: 180px;
 }
 
+.how-section h4,
 .tm-town-hall h4,
 .sec-content h4,
 .cohorts h4,
@@ -231,7 +232,98 @@ header {
 .sec-img img {
   border-radius: 10px;
 }
+section.how-section .content-box {
+  width: 100%;
+  border: 1px solid #e4e8ea;
+  padding: 20px;
+  border-radius: 10px;
+}
+.content-table {
+  display: flex;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.content-box .content-table > div {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
 
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -ms-flex-pack: start;
+  -ms-flex-align: start;
+}
+.content-box .content-table > div:not(:last-child) {
+  margin-bottom: 40px;
+}
+.content-box .content-table,
+.content-box .content-table > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  align-items: flex-start;
+}
+
+.content-box .content-table .icon {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 30px;
+  flex: 0 0 30px;
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+  background: #f38828;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.content-box .content-table .icon > i {
+  color: #fff;
+}
+.content-box .content-table .icon > img {
+  width: 18px;
+  height: 18px;
+}
+.content-box .content-table .icon > span,
+.content-box .content-table .icon > svg {
+  width: 15px;
+  height: 15px;
+  color: #fff;
+}
+.content-box .content-table .text > h3 {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  color: rgba(26, 26, 26, 0.83);
+  margin-bottom: 10px;
+  line-height: 30px;
+}
+
+.content-box .content-table .text > span {
+  display: block;
+  position: relative;
+  line-height: 30.4px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-weight: 500;
+  color: #616161;
+  line-height: 1.6;
+  font-size: 15px;
+}
 section.about-Programme p {
   margin-bottom: 20px;
 }
@@ -256,6 +348,7 @@ section.about-Programme p {
   object-fit: cover;
   border-radius: 13px;
 }
+.how-section h4,
 .tm-town-hall h4,
 .cohorts h4,
 .wholearn h4,
@@ -268,7 +361,8 @@ section.about-Programme p {
 .fees h4 {
   text-align: center;
   margin-bottom: 30px;
-  width: 600px;
+  width: 100%;
+  padding: 0 15px;
   margin: 0 auto 30px auto;
 }
 
@@ -447,7 +541,7 @@ section.session.py-5.bg-white h4 {
 
 .willearn-card img {
   width: 100%;
-  height: 250px;
+  height: 200px;
   object-fit: cover;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
@@ -865,7 +959,7 @@ section:nth-child(odd) {
 }
 
 .gallery {
-  height: 420px;
+  height: 300px;
   border-radius: 15px;
 }
 
@@ -1227,6 +1321,23 @@ a.signupbtn {
 }
 img.tagicon {
   display: none !important;
+}
+
+.tm-town-hall .cohorts-card .info {
+  padding-bottom: 0;
+}
+.tm-town-hall .main-bottom-btn .cohorts-card {
+  display: inline-block;
+  background: transparent;
+  box-shadow: none;
+}
+.tm-town-hall .main-bottom-btn .cohorts-card a {
+  position: unset;
+  left: 0;
+  transform: translate(0);
+}
+.tm-town-hall .main-bottom-btn p {
+  margin-top: 20px;
 }
 
 .cohorts-card .image {

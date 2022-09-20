@@ -108,6 +108,7 @@
   }
 }
 @media (max-width: 767px) {
+  .how-section h4,
   .tm-town-hall h4,
   .cohorts h4,
   .wholearn h4,
@@ -117,9 +118,25 @@
   .sessionrprogramm h4,
   .secheadbox h4,
   .eachcohorts h1 {
-    width: 600px;
+    width: 100%;
     max-width: 100%;
     font-size: 25px;
+  }
+  .content-box .content-table > div {
+    flex: 0 0 100%;
+  }
+  .content-box .content-table > div:not(:last-child) {
+    margin-bottom: 40px;
+  }
+  .content-box .content-table .text > h3 {
+    display: contents;
+    font-size: 16px;
+    line-height: 18px;
+  }
+  .content-box .content-table .text > span {
+    margin-top: 3px;
+    font-size: 14px;
+    line-height: 28px;
   }
 
   .investorLogoBar .investorLogoBarInner .investorBox:first-child,
@@ -181,6 +198,8 @@
   .conttent {
     max-width: 100%;
     padding: 10px;
+    left: 0 !important;
+    transform: translate(0%, -50%) !important;
   }
 
   .stepstoapply ul li .img {
@@ -195,6 +214,7 @@
     line-height: 1.8rem;
     font-size: 20px;
   }
+  .how-section h4,
   .tm-town-hall h4,
   .cohorts h4,
   .wholearn h4,
@@ -294,7 +314,7 @@
 
   .whiusitfor,
   section.banner {
-    height: 50vh;
+    height: 65vh;
   }
 
   .s-card p {
@@ -316,6 +336,7 @@
 }
 
 @media (max-width: 450px) {
+  .how-section h4,
   .tm-town-hall h4,
   .cohorts h4,
   .wholearn h4,
