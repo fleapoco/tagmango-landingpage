@@ -311,6 +311,7 @@ section.how-section .content-box {
   color: rgba(26, 26, 26, 0.83);
   margin-bottom: 10px;
   line-height: 30px;
+  text-transform: uppercase;
 }
 
 .content-box .content-table .text > span {
