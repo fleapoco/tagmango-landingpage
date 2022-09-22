@@ -738,7 +738,15 @@ a.apply_now_white_button {
   display: block;
   font-size: 14px;
 }
-
+.upcoming-chohots .info {
+  padding-bottom: 0;
+}
+.upcoming-chohots .cohorts-card a {
+  margin-top: 10px;
+  position: unset;
+  left: 0;
+  transform: translate(0, 0);
+}
 .wholearn h4 {
   font-size: 25px;
 }
