@@ -1335,18 +1335,30 @@ img.tagicon {
 .tm-town-hall .cohorts-card .info {
   padding-bottom: 0;
 }
-.tm-town-hall .main-bottom-btn .cohorts-card {
+.upcoming-chohots .heading-btn .cohorts-card {
   display: inline-block;
   background: transparent;
   box-shadow: none;
 }
-.tm-town-hall .main-bottom-btn .cohorts-card a {
+.upcoming-chohots .heading-btn .cohorts-card a {
   position: unset;
   left: 0;
   transform: translate(0);
 }
-.tm-town-hall .main-bottom-btn p {
+.upcoming-chohots .heading-btn p {
   margin-top: 20px;
+}
+
+.upcoming-chohots .sub-heading {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  font-size: 14px;
+  color: #f18926;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .cohorts-card .image {
