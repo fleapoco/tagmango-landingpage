@@ -152,8 +152,105 @@ header {
   width: 180px;
 }
 
+.tm-town-hall {
+  background: linear-gradient(180deg, #fff4ee, rgba(255, 255, 255, 0));
+  background-size: cover;
+}
+.tm-town-hall .pannel-wrappers {
+  border: 1px solid #e4e8ea;
+  padding: 30px;
+  border-radius: 10px;
+}
+.confirmed-guests .willearn-card {
+  box-shadow: none;
+}
+.cohorts .owl-nav,
+.confirmed-guests .owl-nav {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  justify-content: space-between;
+  width: 100%;
+  padding: 0px 15px;
+  filter: drop-shadow(2px 0px 5px #1a1a1a40);
+}
+.cohorts .owl-nav button.owl-prev,
+.confirmed-guests .owl-nav button.owl-prev {
+  position: relative;
+  right: 50px;
+}
+.cohorts .owl-nav button img,
+.confirmed-guests .owl-nav img {
+  width: 40px;
+}
+.confirmed-guests .owl-nav button.owl-next {
+  position: relative;
+  left: 50px;
+}
+.tm-town-hall .pannel-wrappers .tabs {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  position: relative;
+}
+.tm-town-hall .pannel-wrappers .tabs .active-tab {
+  background: #f18926;
+  position: relative;
+  color: #fff;
+}
+.tm-town-hall .pannel-wrappers .tabs li {
+  display: inline-block;
+  cursor: pointer;
+  font-weight: 600;
+  color: rgba(26, 26, 26, 0.83);
+  padding: 5px 13px;
+  border-radius: 20px;
+  margin: 0 10px;
+  font-size: 15px;
+}
+
+.tm-town-hall .pannel-wrappers .tabs-content {
+  margin-top: 50px;
+  padding: 0;
+  list-style: none;
+}
+.tm-town-hall .pannel-wrappers .tabs-content li {
+  display: none;
+}
+.tm-town-hall .pannel-wrappers .cohorts-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 13px;
+  text-align: center;
+  box-shadow: 0px 10px 120px 0px rgb(149 146 157 / 15%);
+  transition: all 0.2s ease-in-out;
+}
+.tm-town-hall .pannel-wrappers .info {
+  padding-bottom: 0;
+}
+.tm-town-hall .pannel-wrappers .cohorts-card h6 {
+  display: block;
+  margin: 15px 0px 0px 0px;
+  font-weight: 500;
+  font-size: 14px;
+}
+.tm-town-hall .pannel-wrappers .cohorts-card h4 {
+  display: inline-block;
+  margin: 10px 0 0 0;
+  font-weight: 500;
+  font-size: 16px;
+}
+.tm-town-hall .pannel-wrappers .cohorts-card h5 {
+  display: block;
+  margin: 2px 0 0 0;
+  font-weight: 400;
+  font-size: 15px;
+}
+
 .how-section h4,
 .tm-town-hall h4,
+.confirmed-guests h4,
 .sec-content h4,
 .cohorts h4,
 .wholearn h4,
@@ -351,6 +448,7 @@ section.about-Programme p {
 }
 .how-section h4,
 .tm-town-hall h4,
+.confirmed-guests h4,
 .cohorts h4,
 .wholearn h4,
 .faq h4,

@@ -110,6 +110,7 @@
 @media (max-width: 767px) {
   .how-section h4,
   .tm-town-hall h4,
+  .confirmed-guests h4,
   .cohorts h4,
   .wholearn h4,
   .faq h4,
@@ -121,6 +122,9 @@
     width: 100%;
     max-width: 100%;
     font-size: 25px;
+  }
+  .tabs li:not(:last-child) {
+    margin-bottom: 8px;
   }
   .content-box .content-table > div {
     flex: 0 0 100%;
@@ -216,6 +220,7 @@
   }
   .how-section h4,
   .tm-town-hall h4,
+  .confirmed-guests h4,
   .cohorts h4,
   .wholearn h4,
   .faq h4,
@@ -338,6 +343,7 @@
 @media (max-width: 450px) {
   .how-section h4,
   .tm-town-hall h4,
+  .confirmed-guests h4,
   .cohorts h4,
   .wholearn h4,
   .faq h4,
