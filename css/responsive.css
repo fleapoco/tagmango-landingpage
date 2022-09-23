@@ -225,24 +225,29 @@
     align-items: center;
     display: flex;
   }
+  .tabs li {
+    display: block;
+  }
   .tabs-content {
     margin-top: 20px;
   }
-  .owl-carousel .owl-dots.disabled,
-  .owl-carousel .owl-nav.disabled {
-    display: flex;
-    justify-content: space-between;
-  }
+
   .confirmed-guests .owl-nav button:focus {
     outline: none;
   }
   .confirmed-guests .owl-nav button.owl-prev {
     position: relative;
-    right: 25px;
+    right: 0;
+  }
+  .owl-carousel .owl-nav.disabled {
+    display: block;
+  }
+  .confirmed-guests .owl-nav {
+    display: flex !important;
   }
   .confirmed-guests .owl-nav button.owl-next {
     position: relative;
-    left: 25px;
+    left: 0;
   }
   .stepstoapply ul {
     display: flex;
