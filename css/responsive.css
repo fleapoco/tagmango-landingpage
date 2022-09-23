@@ -121,8 +121,8 @@
   .sub_title {
     font-size: 14px;
   }
-  .tabs li:not(:last-child) {
-    margin-bottom: 8px;
+  .tabs li {
+    margin-bottom: 15px;
   }
   .content-box .content-table > div {
     flex: 0 0 100%;
@@ -192,11 +192,58 @@
   .logo img {
     width: 130px;
   }
+  section.banner {
+    background-attachment: inherit !important;
+  }
 
   .f_inner {
     text-align: center;
   }
 
+  .tm-town-hall .pannel-wrappers {
+    padding: 20px 15px;
+  }
+  .tm-town-hall .pannel-wrappers .tabs {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+  }
+  .episode-section .cohorts-card h4,
+  .tm-town-hall .pannel-wrappers h4 {
+    margin: 5px 0 0 0;
+  }
+  .episode-section .cohorts-card h4 b,
+  .tm-town-hall .pannel-wrappers h4 b {
+    font-size: 16px !important;
+  }
+  .episode-section .cohorts-card h5,
+  .cohorts-card h5 {
+    font-size: 14px;
+  }
+  .tabs li {
+    border-radius: 5px !important;
+    align-items: center;
+    display: flex;
+  }
+  .tabs-content {
+    margin-top: 20px;
+  }
+  .owl-carousel .owl-dots.disabled,
+  .owl-carousel .owl-nav.disabled {
+    display: flex;
+    justify-content: space-between;
+  }
+  .confirmed-guests .owl-nav button:focus {
+    outline: none;
+  }
+  .confirmed-guests .owl-nav button.owl-prev {
+    position: relative;
+    right: 25px;
+  }
+  .confirmed-guests .owl-nav button.owl-next {
+    position: relative;
+    left: 25px;
+  }
   .stepstoapply ul {
     display: flex;
     justify-content: center;

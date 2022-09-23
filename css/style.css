@@ -7,7 +7,7 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 16px;
 }
 
@@ -48,7 +48,7 @@ p {
 
 .banner {
   height: 85vh;
-  background-image: url("../images/banner.png");
+  background-image: url('../images/banner.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -120,7 +120,6 @@ header .link {
   display: inline !important;
   background-color: #0f2137;
   justify-content: center;
-  display: flex;
   align-items: center;
   border-radius: 6px;
   border: 0px;
