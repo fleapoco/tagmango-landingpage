@@ -227,24 +227,38 @@
     display: flex;
     margin: 0 5px 15px 5px !important;
   }
+  .tabs li span {
+    display: block;
+  }
   .tabs-content {
     margin-top: 20px;
   }
-  .owl-carousel .owl-dots.disabled,
+  .testimonial .owl-nav button.owl-prev {
+    right: 0;
+  }
+  .testimonial .owl-nav button.owl-next {
+    left: 0;
+  }
+  .upcoming-chohots .owl-carousel .owl-nav.disabled {
+    display: none !important;
+  }
   .owl-carousel .owl-nav.disabled {
-    display: flex;
-    justify-content: space-between;
+    display: block;
   }
   .confirmed-guests .owl-nav button:focus {
     outline: none;
   }
   .confirmed-guests .owl-nav button.owl-prev {
     position: relative;
-    right: 25px;
+    right: 0;
+  }
+  .cohorts .owl-nav,
+  .owl-nav {
+    display: flex !important;
   }
   .confirmed-guests .owl-nav button.owl-next {
     position: relative;
-    left: 25px;
+    left: 0;
   }
 
   .conttent {
@@ -368,6 +382,8 @@
   .whiusitfor,
   section.banner {
     height: 65vh;
+    background-attachment: inherit;
+    background-position: center center;
   }
 
   .s-card p {
