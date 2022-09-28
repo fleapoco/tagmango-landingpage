@@ -104,16 +104,8 @@
 @media (max-width: 767px) {
   .episode-section h4,
   .confirmed-guests h4,
-  .how-section h4,
-  .tm-town-hall h4,
-  .cohorts h4,
-  .wholearn h4,
-  .faq h4,
-  .gallerysec h4,
-  .testimonial h4,
-  .sessionrprogramm h4,
-  .secheadbox h4,
-  .eachcohorts h1 {
+  .past-episods h4,
+  .tm-town-hall h4 {
     width: 100%;
     max-width: 100%;
     font-size: 25px;
@@ -200,9 +192,12 @@
     text-align: center;
   }
 
+  .past-episods .pannel-wrappers,
   .tm-town-hall .pannel-wrappers {
     padding: 20px 15px;
   }
+
+  .past-episods .pannel-wrappers .tabs-p,
   .tm-town-hall .pannel-wrappers .tabs {
     display: grid;
     grid-template-rows: auto;
@@ -220,14 +215,18 @@
   .cohorts-card h5 {
     font-size: 14px;
   }
+  .tabs-p li,
   .tabs li {
     border-radius: 5px !important;
     align-items: center;
     display: flex;
+    margin: 0 5px 15px 5px !important;
   }
-  .tabs li {
+  .tabs-p li span,
+  .tabs li span {
     display: block;
   }
+  .tabs-content-p,
   .tabs-content {
     margin-top: 20px;
   }
@@ -275,16 +274,8 @@
   }
   .episode-section h4,
   .confirmed-guests h4,
-  .how-section h4,
   .tm-town-hall h4,
-  .cohorts h4,
-  .wholearn h4,
-  .faq h4,
-  .gallerysec h4,
-  .testimonial h4,
-  .sessionrprogramm h4,
-  .secheadbox h4,
-  .eachcohorts h1 {
+  .past-episods h4 {
     margin: 0 auto 20px auto;
   }
 
@@ -376,19 +367,12 @@
 @media (max-width: 450px) {
   .episode-section h4,
   .confirmed-guests h4,
-  .how-section h4,
   .tm-town-hall h4,
-  .cohorts h4,
-  .wholearn h4,
-  .faq h4,
-  .gallerysec h4,
-  .testimonial h4,
-  .sessionrprogramm h4,
-  .secheadbox h4,
-  .eachcohorts h1 {
+  .past-episods h4 {
     font-size: 20px;
     line-height: 1.8rem;
   }
+  .past-episods .col-md-4:not(:last-child),
   .tm-town-hall .col-md-4:not(:last-child) {
     margin-bottom: 24px;
   }

@@ -140,6 +140,7 @@ header .link span {
   background-size: cover;
 }
 
+.past-episods .pannel-wrappers,
 .tm-town-hall .pannel-wrappers {
   border: 1px solid #e4e8ea;
   padding: 30px;
@@ -148,6 +149,7 @@ header .link span {
 
 .episode-section h4,
 .tm-town-hall h4,
+.past-episods h4,
 .confirmed-guests h4 {
   color: #1a1a1ad4;
   font-size: 36px;
@@ -158,6 +160,7 @@ header .link span {
 
 .episode-section h4,
 .tm-town-hall h4,
+.past-episods h4,
 .confirmed-guests h4 {
   text-align: center;
   margin-bottom: 30px;
@@ -311,19 +314,22 @@ header .link span {
   position: relative;
   left: 50px;
 }
-.tabs {
+/* TM Halls Tabs Start*/
+.past-episods .pannel-wrappers .tabs-p,
+.tm-town-hall .pannel-wrappers .tabs {
   padding: 0;
   list-style: none;
   text-align: center;
   position: relative;
 }
-.tabs .active-tab {
+.past-episods .pannel-wrappers .tabs-p .active-tab-p,
+.tm-town-hall .pannel-wrappers .tabs .active-tab {
   background: #f18926;
-
   position: relative;
   color: #fff;
 }
-.tabs li {
+.past-episods .pannel-wrappers .tabs-p li,
+.tm-town-hall .pannel-wrappers .tabs li {
   display: inline-block;
   cursor: pointer;
   font-weight: 600;
@@ -333,20 +339,54 @@ header .link span {
   margin: 0 10px;
   font-size: 15px;
 }
-
-.tabs-content {
-  margin-top: 50px;
+.past-episods .pannel-wrappers .tabs-content-p,
+.tm-town-hall .pannel-wrappers .tabs-content {
+  margin-top: 30px;
   padding: 0;
   list-style: none;
 }
-.tabs-content li {
+.past-episods .pannel-wrappers .tabs-content-p li,
+.tm-town-hall .pannel-wrappers .tabs-content li {
   display: none;
 }
-
+.past-episods .pannel-wrappers .cohorts-card,
+.tm-town-hall .pannel-wrappers .cohorts-card {
+  background: #fff;
+  padding: 15px;
+  border-radius: 13px;
+  text-align: center;
+  box-shadow: 0px 10px 120px 0px rgb(149 146 157 / 15%);
+  transition: all 0.2s ease-in-out;
+}
+.past-episods .pannel-wrappers .info,
+.tm-town-hall .pannel-wrappers .info {
+  padding-bottom: 0;
+}
+.past-episods .pannel-wrappers .cohorts-card h6,
+.tm-town-hall .pannel-wrappers .cohorts-card h6 {
+  display: block;
+  margin: 15px 0px 0px 0px;
+  font-weight: 500;
+  font-size: 14px;
+}
+.past-episods .pannel-wrappers .cohorts-card h4,
+.tm-town-hall .pannel-wrappers .cohorts-card h4 {
+  display: inline-block;
+  margin: 10px 0 0 0;
+  font-weight: 500;
+  font-size: 16px;
+}
+.past-episods .pannel-wrappers .cohorts-card h5,
+.tm-town-hall .pannel-wrappers .cohorts-card h5 {
+  display: block;
+  margin: 2px 0 0 0;
+  font-weight: 400;
+  font-size: 15px;
+}
+/* TM Halls Tabs end*/
 .owl-carousel .item {
   padding: 10px;
 }
-
 .willearn-card.testimonial-card {
   min-height: 300px;
   position: relative;
