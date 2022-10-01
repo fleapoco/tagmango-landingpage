@@ -124,6 +124,14 @@
     max-width: 100%;
     font-size: 25px;
   }
+  .tm-town-hall .pannel-wrappers .tabs li:last-child {
+    margin-top: 15px;
+  }
+
+  .past-episods .col-md-4:not(:last-child),
+  .tm-town-hall .col-md-4:not(:last-child) {
+    margin-bottom: 24px;
+  }
   .content-box .content-table > div {
     flex: 0 0 100%;
   }
@@ -256,6 +264,7 @@
   .confirmed-guests .owl-nav button:focus {
     outline: none;
   }
+  .cohorts .owl-nav button.owl-prev,
   .confirmed-guests .owl-nav button.owl-prev {
     position: relative;
     right: 0;
@@ -264,6 +273,7 @@
   .owl-nav {
     display: flex !important;
   }
+  .cohorts .owl-nav button.owl-next,
   .confirmed-guests .owl-nav button.owl-next {
     position: relative;
     left: 0;
@@ -383,8 +393,7 @@
   .cohorts .owl-nav {
     display: none;
   }
-  .testimonial-card .images,
-  .willearn-card .images {
+  .testimonial-card .images {
     height: 296px;
   }
 
@@ -428,10 +437,6 @@
   .eachcohorts h1 {
     font-size: 20px;
     line-height: 1.8rem;
-  }
-  .past-episods .col-md-4:not(:last-child),
-  .tm-town-hall .col-md-4:not(:last-child) {
-    margin-bottom: 24px;
   }
 }
 
